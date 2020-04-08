@@ -36,18 +36,6 @@ public class GameController {
                 .setBoxArt(gameStoreRequest.getBoxArt())
                 .build();
 
-//        Game game = Game.Builder
-//                .newBuilder()
-//                .setId(System.currentTimeMillis())
-//                .setName("FIFA 20")
-//                .setPlatform(Platform.PS4)
-//                .setGenre("Sport")
-//                .setPublisher("EA Sports")
-//                .setReleaseDate(LocalDate.now())
-//                .setNumOfPlayers(6)
-//                .setBoxArt("https://images-na.ssl-images-amazon.com/images/I/81lDaY4ZpFL._SX385_.jpg")
-//                .build();
-
         gameService.storeGame(game);
         return "success";
     }
